@@ -45,7 +45,7 @@ def data_trans(game_state, last_n):
         data_trans[1] = np.full((15, 15), 1)-data_trans[2]-data_trans[3] #第二個特徵available
         data_trans3.append((data_trans, np.array(data_trans2), whowin))
     
-    data_trans3 = data_trans3[int(np.max(game_state))-4:]
+    data_trans3 = data_trans3[int(np.max(game_state))-3:]
     # if (len(data_trans3) < 10):
     #     print("dropped game has length", len(data_trans3))
     # else:
