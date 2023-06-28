@@ -61,3 +61,5 @@ def save_trans_data(root_path,data,source,last_n):
     print("saving data to ",file_path)
     with open(file_path, 'wb') as f:
         pickle.dump(data, f)
+def do_nothing():
+    pass
